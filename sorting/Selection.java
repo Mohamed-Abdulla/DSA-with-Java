@@ -10,7 +10,6 @@ public class Selection {
         // find max or min element in array , and put it in right place
         //if max, put it in last else first
 
-
         //find maxIndex, swap it with last index
 
         for (int i = 0; i < nums.length; i++) {
