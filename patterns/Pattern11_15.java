@@ -8,7 +8,8 @@ public class Pattern11_15 {
 //        pattern13(n);
 //        pattern28(n);
 //        pattern30(n);
-        pattern17(n);
+//        pattern17(n);
+        pattern31(4);
     }
 
     private static void pattern11(int n) {
@@ -75,7 +76,8 @@ public class Pattern11_15 {
             System.out.println();
 
         }
-    }private static void pattern17(int n) {
+    }
+    private static void pattern17(int n) {
         for (int row = 1; row <= 2 * n; row++) {
             int totalRowInCols= row < n ? row : 2 * n -row;
 
@@ -90,6 +92,17 @@ public class Pattern11_15 {
             }
             System.out.println();
 
+        }
+    }
+    static void pattern31(int n) {
+        int originalN = n;
+        n = 2 * n;
+        for (int row = 0; row <= n; row++) {
+            for (int col = 0; col <= n; col++) {
+                int atEveryIndex = originalN - Math.min(Math.min(row, col), Math.min(n - row, n - col));
+                System.out.print(atEveryIndex + " ");
+            }
+            System.out.println();
         }
     }
 }
