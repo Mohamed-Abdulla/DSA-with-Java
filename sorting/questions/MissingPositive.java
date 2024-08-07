@@ -10,7 +10,7 @@ public class MissingPositive {
         // since, its asks positive, we can ignore negatives
         //also missing positive can be found at last,so ignore last element also
         // hint: O(n), sort -> so cyclic sort can apply, also missing number pattern
-
+        firstMissingPositive(nums);
 
     }
 
